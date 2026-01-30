@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb6efe0c-7559-461d-80fb-7c05b2dab790" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/9pay-sdk-dotnet.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Config/NinePayConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enums/Currency.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enums/Language.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enums/PaymentMethod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enums/TransactionType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/CreatePaymentExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/InvalidConfigException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/PaymentException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/SignatureVerifyException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/NinePayGateway.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/PaymentGatewayInterface.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Request/CreatePaymentRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Request/RequestInterface.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Response/PaymentResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Response/ResponseInterface.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/NinePayGatewayTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils/Environment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils/MessageBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils/Signature.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/9pay-sdk-dotnet.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/9pay-sdk-dotnet.csproj.nuget.g 2.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/9pay-sdk-dotnet.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/9pay-sdk-dotnet.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
