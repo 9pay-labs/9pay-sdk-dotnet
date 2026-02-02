@@ -1,2 +1,25 @@
+# Environment variables
+.env
+
+# .NET build output
 bin/
 obj/
+
+# Visual Studio / Rider / VSCode
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+*_history
+
+# Logs
+*.log
