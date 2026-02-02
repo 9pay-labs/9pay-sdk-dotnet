@@ -50,7 +50,7 @@ NINEPAY_ENV=SANDBOX
 
 ## Configuration
 
-```bash
+```csharp
 using NinePay.SDK.DotNet.Config;
 
 var merchantId = Environment.GetEnvironmentVariable("NINEPAY_MERCHANT_ID");
@@ -70,7 +70,7 @@ var config = new NinePayConfig(
 
 ## Initialization
 
-```bash
+```csharp
 using NinePay.SDK.DotNet.Gateway;
 
 var gateway = new NinePayGateway(config);
