@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E89DCD40-F27C-4B3E-9EAF-A604B69077C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinePay.SDK.DotNet", "src\NinePay.SDK.DotNet\NinePay.SDK.DotNet.csproj", "{6A068169-79DB-4501-9CD4-836F915F0D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AF5E6C31-548D-49BD-8198-F9C84B044A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinePay.SDK.DotNet.Test", "test\NinePay.SDK.DotNet.Test\NinePay.SDK.DotNet.Test.csproj", "{DF134CBB-A46F-4574-A813-937A32DFFE53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A068169-79DB-4501-9CD4-836F915F0D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A068169-79DB-4501-9CD4-836F915F0D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A068169-79DB-4501-9CD4-836F915F0D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A068169-79DB-4501-9CD4-836F915F0D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF134CBB-A46F-4574-A813-937A32DFFE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF134CBB-A46F-4574-A813-937A32DFFE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF134CBB-A46F-4574-A813-937A32DFFE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF134CBB-A46F-4574-A813-937A32DFFE53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A068169-79DB-4501-9CD4-836F915F0D1B} = {E89DCD40-F27C-4B3E-9EAF-A604B69077C8}
+		{DF134CBB-A46F-4574-A813-937A32DFFE53} = {AF5E6C31-548D-49BD-8198-F9C84B044A3F}
+	EndGlobalSection
+EndGlobal
