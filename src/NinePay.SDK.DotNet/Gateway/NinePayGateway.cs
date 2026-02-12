@@ -153,5 +153,51 @@ namespace NinePay.SDK.DotNet.Gateway
                 }
             }
         }
+
+        // ========== refund ==========
+        public PaymentResponse Refund(ReverseRequest request)
+        {
+            var url = endpoint + "/api/v2/refund";
+
+            var payload = request.ToPayload();
+            long timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
+            string httpQuery = SignatureV2Util.BuildHttpQuery(payload);
+
+            string signature = SignatureV2Util.CreateSignature(
+                "POST",
+                "/api/v2/refund",
+                timestamp,
+                httpQuery,
+                secretKey
+            );
+
+            var headers = new Dictionary<string, string>
+            {
+                { "X-Request-Time", timestamp.ToString() },
+                { "X-Signature", signature },
+                { "Content-Type", "application/x-www-form-urlencoded" }
+            };
+
+            string response = HttpHelper.PostForm(url, payload, headers);
+
+            // ⚠️ Nếu API trả HTML -> coi như lỗi
+            if (string.IsNullOrEmpty(response) || response.TrimStart().StartsWith("<"))
+            {
+                return new PaymentResponse(false, null, "Invalid response from refund API");
+            }
+
+            var data = JsonSerializer.Deserialize<Dictionary<string, object>>(response)
+                       ?? new Dictionary<string, object>();
+
+            bool success = data.ContainsKey("success") && data["success"]?.ToString() == "true";
+
+            string message = data.ContainsKey("message")
+                ? data["message"]?.ToString() ?? ""
+                : "";
+
+            return new PaymentResponse(success, data, message);
+        }
+
     }
 }

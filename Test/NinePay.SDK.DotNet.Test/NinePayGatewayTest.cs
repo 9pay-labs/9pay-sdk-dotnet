@@ -29,5 +29,20 @@ namespace NinePay.SDK.DotNet.Test
             Assert.Contains("baseEncode=", redirectUrl);
             Assert.Contains("signature=", redirectUrl);
         }
+
+        // ================= REFUND TEST =================
+        [Fact]
+        public void TestRefund()
+        {
+            var refundRequest = new ReverseRequest(
+                requestId: "REFUND_" + System.DateTime.Now.Ticks,
+                orderCode: "INV123"
+            );
+
+            ResponseInterface response = gateway.Refund(refundRequest);
+
+            Assert.NotNull(response);
+            Assert.NotNull(response.GetMessage());
+        }
     }
 }

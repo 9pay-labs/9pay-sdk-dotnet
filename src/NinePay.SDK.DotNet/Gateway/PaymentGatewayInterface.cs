@@ -7,5 +7,6 @@ namespace NinePay.SDK.DotNet.Gateway
     {
         ResponseInterface CreatePayment(CreatePaymentRequest request);
         ResponseInterface Inquiry(string transactionId);
+        PaymentResponse Refund(ReverseRequest request);
     }
 }
