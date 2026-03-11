@@ -1,5 +1,8 @@
 # 9PAY Payment Gateway .NET SDK
 
+[![NuGet](https://img.shields.io/nuget/v/NinePay.SDK.DotNet.svg)](https://www.nuget.org/packages/NinePay.SDK.DotNet)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/NinePay.SDK.DotNet.svg)](https://www.nuget.org/packages/NinePay.SDK.DotNet)
+
 Official .NET SDK for integrating 9PAY Payment Gateway.
 
 This package allows you to:
@@ -12,9 +15,9 @@ This package allows you to:
 
 ## Requirements
 
-- .NET 6.0 or higher
+- .NET 6.0 / 7.0 / 8.0
 
-Dependencies:
+Dependencies (automatically installed):
 
 - Newtonsoft.Json
 - DotNetEnv
@@ -23,16 +26,22 @@ Dependencies:
 
 ## Installation
 
-Clone source or add project reference:
+### Via NuGet Package Manager
 
 ```bash
-git clone https://github.com/9pay-labs/9pay-sdk-dotnet.git
+dotnet add package NinePay.SDK.DotNet
 ```
 
-Or add reference in your project:
+Or via Package Manager Console:
+
+```powershell
+Install-Package NinePay.SDK.DotNet
+```
+
+### Via PackageReference
 
 ```xml
-  <ProjectReference Include="path/to/NinePay.SDK.DotNet.csproj" />
+<PackageReference Include="NinePay.SDK.DotNet" Version="1.0.0" />
 ```
 
 ---

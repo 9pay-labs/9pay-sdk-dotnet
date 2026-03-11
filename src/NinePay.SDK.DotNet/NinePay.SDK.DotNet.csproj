@@ -1,17 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <RootNamespace>NinePay.SDK.DotNet</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
 
-    <OutputType>Library</OutputType>
+    <!-- NuGet Package Metadata -->
+    <PackageId>NinePay.SDK.DotNet</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>9Pay</Authors>
+    <Company>9Pay JSC</Company>
+    <Copyright>Copyright © 9Pay 2024</Copyright>
+    <Description>Official .NET SDK for 9PAY Payment Gateway. Create payment requests, query transaction status, and verify webhook/callback data.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/9pay-labs/9pay-sdk-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/9pay-labs/9pay-sdk-dotnet.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>9pay;payment;gateway;vietnam;sdk;payment-gateway;fintech</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="3.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
