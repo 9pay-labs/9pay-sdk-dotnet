@@ -26,16 +26,10 @@ Dependencies (automatically installed):
 
 ## Installation
 
-### Via NuGet Package Manager
+### Via .NET CLI
 
 ```bash
 dotnet add package NinePay.SDK.DotNet
-```
-
-Or via Package Manager Console:
-
-```powershell
-Install-Package NinePay.SDK.DotNet
 ```
 
 ### Via PackageReference
