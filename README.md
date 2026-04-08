@@ -42,13 +42,13 @@ dotnet add package NinePay.SDK.DotNet
 
 ## Environment Configuration
 
-Create a .env file in your project root:
+Set the following environment variables (or use a `.env` file — never commit it):
 
 ```bash
 NINEPAY_MERCHANT_ID=YOUR_MERCHANT_ID
 NINEPAY_SECRET_KEY=YOUR_SECRET_KEY
 NINEPAY_CHECKSUM_KEY=YOUR_CHECKSUM_KEY
-NINEPAY_ENV=SANDBOX
+NINEPAY_ENDPOINT=https://your-gateway-endpoint.com
 ```
 
 ## Configuration
@@ -59,13 +59,13 @@ using NinePay.SDK.DotNet.Config;
 var merchantId = Environment.GetEnvironmentVariable("NINEPAY_MERCHANT_ID");
 var secretKey = Environment.GetEnvironmentVariable("NINEPAY_SECRET_KEY");
 var checksumKey = Environment.GetEnvironmentVariable("NINEPAY_CHECKSUM_KEY");
-var env = Environment.GetEnvironmentVariable("NINEPAY_ENV");
+var endpoint = Environment.GetEnvironmentVariable("NINEPAY_ENDPOINT");
 
 var config = new NinePayConfig(
     merchantId,
     secretKey,
     checksumKey,
-    env
+    endpoint
 );
 ```
 
