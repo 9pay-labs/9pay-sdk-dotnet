@@ -14,13 +14,13 @@ namespace NinePay.SDK.DotNet.Example
             var merchantId = Environment.GetEnvironmentVariable("NINEPAY_MERCHANT_ID");
             var secretKey = Environment.GetEnvironmentVariable("NINEPAY_SECRET_KEY");
             var checksumKey = Environment.GetEnvironmentVariable("NINEPAY_CHECKSUM_KEY");
-            var env = Environment.GetEnvironmentVariable("NINEPAY_ENV");
+            var endpoint = Environment.GetEnvironmentVariable("NINEPAY_ENDPOINT");
 
             var config = new NinePayConfig(
                 merchantId,
                 secretKey,
                 checksumKey,
-                env
+                endpoint
             );
 
             var gateway = new NinePayGateway(config);

@@ -26,7 +26,7 @@ namespace NinePay.SDK.DotNet.Gateway
             secretKey = config.SecretKey;
             checksumKey = config.ChecksumKey;
 
-            endpoint = NinePay.SDK.DotNet.Utils.Environment.Endpoint(config.Env);
+            endpoint = config.Endpoint;
 
             httpClient = new HttpClient
             {

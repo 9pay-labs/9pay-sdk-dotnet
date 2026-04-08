@@ -1,17 +1,5 @@
 namespace NinePay.SDK.DotNet.Utils
 {
-    public static class Environment
-    {
-        public const string SAND = "https://sand-payment.9pay.vn";
-        public const string PROD = "https://payment.9pay.vn";
-
-        public static string Endpoint(string env)
-        {
-            if ("PRODUCTION".Equals(env, System.StringComparison.OrdinalIgnoreCase))
-            {
-                return PROD;
-            }
-            return SAND;
-        }
-    }
+    // Endpoint is now supplied via NINEPAY_ENDPOINT environment variable.
+    // No domain URLs are hardcoded here to keep them out of public source control.
 }

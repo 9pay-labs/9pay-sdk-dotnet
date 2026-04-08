@@ -7,28 +7,24 @@ namespace NinePay.SDK.DotNet.Config
         public string MerchantId { get; }
         public string SecretKey { get; }
         public string ChecksumKey { get; }
-        public string Env { get; }
+        public string Endpoint { get; }
 
-        public NinePayConfig(string merchantId, string secretKey, string checksumKey, string env)
+        public NinePayConfig(string merchantId, string secretKey, string checksumKey, string endpoint)
         {
             if (string.IsNullOrEmpty(merchantId) ||
                 string.IsNullOrEmpty(secretKey) ||
-                string.IsNullOrEmpty(checksumKey))
+                string.IsNullOrEmpty(checksumKey) ||
+                string.IsNullOrEmpty(endpoint))
             {
                 throw new InvalidConfigException(
-                    "NinePay config requires merchantId, secretKey, checksumKey"
+                    "NinePay config requires merchantId, secretKey, checksumKey, endpoint"
                 );
             }
 
             MerchantId = merchantId;
             SecretKey = secretKey;
             ChecksumKey = checksumKey;
-            Env = string.IsNullOrEmpty(env) ? "SANDBOX" : env;
-        }
-
-        public NinePayConfig(string merchantId, string secretKey, string checksumKey)
-            : this(merchantId, secretKey, checksumKey, "SANDBOX")
-        {
+            Endpoint = endpoint.TrimEnd('/');
         }
     }
 }

@@ -12,7 +12,8 @@ namespace NinePay.SDK.DotNet.Test
 
         public NinePayGatewayTest()
         {
-            var config = new NinePayConfig("MID", "SECRET", "CHECKSUM", "SANDBOX");
+            var endpoint = System.Environment.GetEnvironmentVariable("NINEPAY_ENDPOINT") ?? "https://sandbox.example.com";
+            var config = new NinePayConfig("MID", "SECRET", "CHECKSUM", endpoint);
             gateway = new NinePayGateway(config);
         }
 
