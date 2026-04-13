@@ -15,7 +15,7 @@ This package allows you to:
 
 ## Requirements
 
-- .NET 6.0 / 7.0 / 8.0
+- .NET 8.0
 
 Dependencies (automatically installed):
 
@@ -35,7 +35,7 @@ dotnet add package NinePay.SDK.DotNet
 ### Via PackageReference
 
 ```xml
-<PackageReference Include="NinePay.SDK.DotNet" Version="1.0.0" />
+<PackageReference Include="NinePay.SDK.DotNet" Version="1.0.1" />
 ```
 
 ---
