@@ -1,7 +1,6 @@
 <!-- checksums:start -->
 | SHA-256 | File |
 |---------|------|
-| `0bffc5e1d9d3e49d74476b8fe1cd51f670bf06a07dac1f97dbc2b5368a7614fa` | `.claude/settings.local.json` |
 | `818c8f18ca2491a23f41491d776f0e7a294131f354dac954e50022e0cc2e56fe` | `.gitignore` |
 | `f9765f1d79399d637116b2462dd6518b11a1fd78bd4fbd3c23f5573d9c064f9b` | `LICENSE` |
 | `783bc2c08734662642f51791e7ee37818aa96ba2ac03d1d2f825af40e2c862ae` | `NinePay.SDK.DotNet.sln` |
